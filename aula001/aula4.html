@@ -22,29 +22,35 @@
 <div id="area">
     Intereja......
 </div>
-    
+
 <script>
 
-var ar = window.document.getElementById("area")    
+var d = document.getElementById("area")
 
-ar.addEventListener('click',clicar)
-ar.addEventListener('mouseenter',entrar)
-ar.addEventListener('mouseout',sair)
+d.addEventListener("click", clicar)
+d.addEventListener("mouseenter", entrar)
+d.addEventListener("mouseout", sair)
 
-function clicar(){
-    ar.innerText = "Clicou!"
-    ar.style.background = "red"
-}
-function entrar(){
-ar.innerText = "Entrou!"
-}
-function sair(){
-ar.innerText = "Saiu!"
-ar.style.background = "green"
-}
 
+
+    function clicar() {
+
+       
+        d.innerText = "Clicou!!" 
+        d.style.background = "red"
+    }
+
+    function entrar() {
+
+    d.innerText = "Entrou!!"          
+
+    } 
+    function sair(){
+        d.innerText = "Sair!!"
+        d.style.background = "green"
+    }
 </script>
-
+ 
 
 
 </body>
