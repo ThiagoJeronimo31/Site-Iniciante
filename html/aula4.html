@@ -25,30 +25,27 @@
 
 <script>
 
-var d = document.getElementById("area")
-
-d.addEventListener("click", clicar)
-d.addEventListener("mouseenter", entrar)
+var d = window.document.querySelector("div#area")
+d.addEventListener("click",clicou)
+d.addEventListener("mouseenter",entrar )
 d.addEventListener("mouseout", sair)
 
+function clicou(){
+d.style.background = "blue"
+d.innerHTML = "Clicou!!"
+}
+
+function entrar(){
+    d.innerHTML = "Entrou!!"
+}
+
+function sair(){
+    d.style.background = "green"
+    d.innerHTML = "Saiu!!"
+}
 
 
-    function clicar() {
 
-       
-        d.innerText = "Clicou!!" 
-        d.style.background = "red"
-    }
-
-    function entrar() {
-
-    d.innerText = "Entrou!!"          
-
-    } 
-    function sair(){
-        d.innerText = "Sair!!"
-        d.style.background = "green"
-    }
 </script>
  
 

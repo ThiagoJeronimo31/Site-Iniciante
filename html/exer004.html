@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+  <h1>Descubra sua nacionalidade </h1>
+  Qual seu país de origem: <input type="text"  id="nacio">
+  <input type="button" value="processando" onclick = "descubra()">
+<div id = "resul">
+
+
+</div>
+
+<script>
+
+function descubra(){
+  var nacio = window.document.getElementById("nacio")
+  var r = window.document.getElementById("resul")
+  var n = nacio.value
+
+  if (n == "brasil"){
+    r.innerHTML = "Que merda, você é brasileiro"
+  }
+  else {
+    r.innerHTML = "Você tem sorte"
+  }
+}
+
+</script>
+
+
+
+</body>
+</html>
